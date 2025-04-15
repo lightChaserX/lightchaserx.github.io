@@ -8,6 +8,25 @@ body {
     opacity: 0.95;
 }
 
+/* set the font size for author and vanue */
+.pubinfo {
+    font-size: 0.9rem;
+    /* color:#2575fc; */
+    color:slategrey;
+    /* color:#747071; */
+}
+
+.author {
+    font-size: 0.92rem;
+    color:slategrey;
+}
+
+.pubmeta {
+    font-size: 0.85rem;
+    color:#aaa;
+    /* color:#2575fc; */
+}
+
 .inline-badge {
     height: 16px;
     vertical-align: -10%;
@@ -78,8 +97,8 @@ video.lazy {
 }
 
 .venue {
-  /* color:  #B55370; */
-  /* font-weight: bold; */
+  color:#2575fc;
+  font-weight: bold;
 }
 
 
