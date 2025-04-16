@@ -136,7 +136,8 @@ video.lazy {
 
 a {
     text-decoration: none;
-    color: #ea8a73;
+    /* color: #ea8a73; */
+    color: #d07616;
 }
 
 a:hover {
