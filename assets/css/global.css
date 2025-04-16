@@ -210,7 +210,7 @@ a.icon-link {
 
 .apptag {
     /* font-size: 0.85rem; */
-    color:#DDD;
+    color:#FFF;
     display: inline-block;
     padding: 0.2em 0.9em; /* Adjust padding for size */
     /* font-weight: 600; */
@@ -222,7 +222,7 @@ a.icon-link {
 }
 
 .apptag .apptag-link {
-    color: #DDD; /* Text color */
+    color: #FFF; /* Text color */
     text-decoration: none; /* Remove underline */
 }
 
