@@ -187,8 +187,9 @@ a.icon-link {
 .rediconcolor {color:#B55370;}
 
 .misctag {
-    font-size: 0.9rem;
-    color:#aaa;
+    font-size: 0.92rem;
+    /* color:#aaa; */
+    color:slategrey;
     font-weight: 600; 
     /* display: inline-block;
     padding: 0.05em 0.3em; 
