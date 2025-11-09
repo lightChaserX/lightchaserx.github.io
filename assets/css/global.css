@@ -281,11 +281,11 @@ a.icon-link {
 
 .apptag {
     /* font-size: 0.85rem; */
-    color:#FFF;
+    color:#111111;
     display: inline-block;
     padding: 0.2em 0.9em; /* Adjust padding for size */
     /* font-weight: 600; */
-    background-color:#092747; /* Background color */
+    background-color:#81868456; /* Background color */
     border-radius: 9px; /* Rounded corners */
     text-align: center;
     vertical-align: middle;
