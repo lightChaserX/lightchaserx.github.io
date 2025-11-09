@@ -124,7 +124,8 @@ video.lazy {
 }
 
 .venue {
-  color:#2575fc;
+  /* color:#2575fc; */
+  color:#000101;
   font-weight: bold;
 }
 
@@ -166,6 +167,7 @@ a {
     /* color: #ea8a73; */
     /* color: #d07616; */
     color: #d07616;
+    /* color:  #d43f6c; */
 }
 
 a:hover {
@@ -196,6 +198,46 @@ a.icon-link {
     color: #747071;
 }
 
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem; /* spacing between buttons */
+  }
+  
+  .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: "MessinaSans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #111;
+    text-decoration: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.4rem;
+    padding: 0.35rem 0.9rem;
+    transition: all 0.2s ease;
+    background-color: transparent;
+  }
+  
+  /* hover effect */
+  .contact-btn:hover {
+    border-color: #3b5fff;
+    color: #3b5fff;
+  }
+  
+  /* active state (blue outline) */
+  .contact-btn.active {
+    border-color: #0b3dd9;
+    color: #0b3dd9;
+  }
+  
+  /* icon sizing */
+  .contact-btn i {
+    font-size: 0.9rem;
+    line-height: 1;
+  }
 
 .soft {
     /* border: 0; */
@@ -265,3 +307,66 @@ a.icon-link {
     color: #555; /* Set arrow color */
     vertical-align: middle; /* Align with text */
 }
+
+.news-date {
+    display: inline-block;
+    width: 5.5em;           /* 固定宽度可微调 */
+    font-weight: 500;
+    color: #555;
+    text-align: left;      
+    /* margin-right: .6em; */
+    font-variant-numeric: tabular-nums;  /* 等宽数字 */
+  }
+
+  .section-title {
+    display: inline-block;          
+    border-bottom: 2px solid #191c1f;
+    /* padding-bottom: 0.2rem;         */
+    margin-bottom: 0.6rem;
+  }
+  
+
+  .light-navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    position: static;
+    padding: 0.3rem 0 0.6rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+  }
+  
+  .light-container {
+    /* max-width: 900px; */
+    margin: 0 auto;
+    padding: 0 0rem;
+    display: flex;
+    justify-content: flex-end; /* 👈 align all links to the right */
+    align-items: center;
+  }
+  
+  /* Navigation links */
+  .light-links a {
+    /* font-family: "MessinaSans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; */
+    font-size: 0.95rem;
+    color: hsl(211, 25%, 25%);
+    text-decoration: none;
+    margin-left: 1.25rem;
+    transition: color 0.2s ease;
+  }
+  
+  .light-links a:hover {
+    color: hsl(211, 75%, 40%);
+  }
+  
+  /* Responsive: center on mobile */
+  @media (max-width: 600px) {
+    .light-container {
+      justify-content: center;
+    }
+    .light-links a {
+      margin-left: 0.8rem;
+      margin-right: 0.8rem;
+    }
+  }
+  

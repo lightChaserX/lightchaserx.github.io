@@ -28,8 +28,21 @@
 <body class="bg-light" >
     
     <div class="container">
-        <div class="card border-0 shadow-sm bg-white">
-    <div class="card-body p-5">
+        <div>
+    <nav class="light-navbar ∂∂p-3">
+        <div class="light-container">
+          <!-- <a href="/" class="light-home">Zhixiang Wang</a> -->
+          <div class="light-links">
+            <a href="#news">News</a>
+            <a href="#research">Research</a>
+            <a href="#misc">Misc</a>
+          </div>
+        </div>
+      </nav>
+      
+    
+    
+    <div class=" p-3">
         <div class="row">
             <div class="col">
                 <p class="h2 " >Zhixiang Wang <span> | 汪智祥</span></h1>
@@ -79,50 +92,56 @@
 
 
         </div>
-        <hr />
+        <!-- <hr /> -->
 
 
-        <div class="row h3">
-            <div class="col">
-                <a class="pr-3 icon-link" href="mailto:wangzx1994@gmail.com">
-                    <i class="fa fa-envelope"></i></a>
-                <a class="pr-3 icon-link" target="_blank" href="https://scholar.google.com/citations?user=yybzbxMAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
-                <a class="pr-3 icon-link" target="_blank" href="https://twitter.com/lightchaserx">
-                    <i class="fab fa-twitter"></i></a>
-                <a class="pr-3 icon-link" target="_blank" href="https://www.linkedin.com/in/zhixiang-wang-79534699/">
-                    <i class="fab fa-linkedin"></i></a>
+        <div class="row">
+            <div class="col contact-links">
+              <a href="mailto:wangzx1994@gmail.com" class="contact-btn">
+                <span>Email</span> <i class="fa fa-envelope"></i>
+              </a>
+              <a target="_blank" href="https://twitter.com/lightchaserx" class="contact-btn">
+                <span>Twitter</span> <i class="fab fa-twitter"></i>
+              </a>
+              <a target="_blank" href="https://scholar.google.com/citations?user=yybzbxMAAAAJ&hl=en" class="contact-btn">
+                <span>Scholar</span> <i class="fa fa-graduation-cap"></i>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/zhixiang-wang-79534699/" class="contact-btn">
+                <span>LinkedIn</span> <i class="fa fa-id-card"></i>
+              </a>
             </div>
-        </div>
+          </div>
+          
 
     </div>
 </div>
 
-<div class="my-3 p-0 bg-white shadow-sm rounded-lg">
-    <h5 class="border-bottom border-gray p-3 mb-0">
+<div class="my-3 p-0 p-3 mb-2  rounded-lg">
+    <h3 class=" section-title" id="news">
         News
-   </h5>
-   <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0 text-muted">
-    <ul>
+   </h3>
+   <div class="row  position-relative   text-muted">
+    <ul style="list-style-type: none; ">
         <li class="text-muted">
-            11/2025&nbsp;  I am recognized as Top Area Chair by NeurIPS 2025.
+            <span class="news-date">2025-11</span> I am recognized as Top Area Chair by NeurIPS 2025.
         </li>
         <!-- <li class="text-muted">
             09/2025&nbsp; I am serving as Area Chair for ICLR 2026 and CVPR 2026.
         </li> -->
         <li class="text-muted">
-            09/2025&nbsp; I am recognized as Outstanding Reviewer by ICCV 2025.
+            <span class="news-date">2025-09</span> I am recognized as Outstanding Reviewer by ICCV 2025.
         </li>
     <li class="text-muted">
-        05/2025&nbsp; We are organizing the <a href="https://responsible-imaging.github.io/">Workshop on Responsible Imaging</a> at ICCV 2025.
+        <span class="news-date">2025-05</span> We are organizing the <a href="https://responsible-imaging.github.io/">Workshop on Responsible Imaging</a> at ICCV 2025.
     </li>
     <li class="text-muted">
-        05/2025&nbsp; We are organizing the <a href="https://avgen123.github.io/">2nd Workshop on Audio-Visual Generation and Learning</a> at ICCV 2025.
+        <span class="news-date">2025-05</span> We are organizing the <a href="https://avgen123.github.io/">2nd Workshop on Audio-Visual Generation and Learning</a> at ICCV 2025.
     </li>
     <!-- <li class="text-muted">
         04/2025&nbsp; I am serving as an Area Chair for NeurIPS 2025.
     </li> -->
     <li class="text-muted">
-        12/2024&nbsp; Call for Paper: <a href="https://avgen123.github.io/">IJCV Special Issue on Audio-Visual Generation</a>
+        <span class="news-date">2024-12</span> Call for Paper: <a href="https://avgen123.github.io/">IJCV Special Issue on Audio-Visual Generation</a>.
     </li>
     <!-- <li class="text-muted">
         08/2024&nbsp;  My proposal on Neural Camera has been accepted to ECCV 2024's Doctoral Consortium! <span class="text-muted">
@@ -146,13 +165,13 @@
 
 
 
-<div class="my-3 p-0 bg-white shadow-sm rounded-lg">
+<div class="my-3 p-3">
     <!-- <h5 class="p-3 mb-0 border-bottom border-gray">-->
-        <h5 class="p-3 mb-0">
+        <h3 class="section-title" id="research">
         Research
-    </h5>
+    </h3>
         <!-- <i class="fas fa-book blackiconcolor"></i> -->
-   <!-- <div class="row no-gutters position-relative ml-4 pb-15 small text-muted  "> -->
+   <!-- <div class="row  position-relative ml-4 pb-15 small text-muted  "> -->
     <!-- <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0"> -->
    <!-- <p> -->
     <!-- My research is centered on Computational Photography and Imaging, with a focus on capturing the intricacies of the physical world through innovative hardware and algorithmic designs. I am now keen on blending physical principles with generative models for reconstructions and interactions of the physical world.  -->
@@ -165,7 +184,140 @@
     
     
 
-    <div class="row no-gutters position-relative border-top border-gray">
+    
+
+
+    <div class="row  position-relative  ">
+        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+                <img src="./assets/pub/2025/subjective-cam/subjective-camera.jpg" class="lazy w-100 rounded-lg">
+        </div>
+        <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0">
+            <h5 class="mt-0 mb-1 ">Subjective Camera 1.0: Bridging Human Cognition and Visual
+                Reconstruction through Sequence-Aware Sketch-Guided Diffusion
+        </h5>
+            <p class="mt-0 mb-0 pubinfo">
+                <a class="comma author" target="_blank" href="">Haoyang Chen</a>
+                <a class="comma author" target="_blank" href="">Dongfang Sun</a>
+                <a class="comma author" target="_blank" href="https://miles629.github.io/">Caoyuan Ma</a>
+                <a class="comma author" target="_blank" href="">Shiqin Wang</a>
+                <a class="comma author" target="_blank" href="">Kewei Zhang</a>
+                <a class="comma author" target="_blank" href="https://wangzwhu.github.io/home/">Zheng Wang<sup>†</sup></a>
+                <span class="comma author"><strong>Zhixiang Wang<sup>†</sup></strong></span>
+                <p class="mt-0 mb-0 pubinfo"><i><span class="venue">ICCV</span></i> 2025</p>
+
+        
+                <p class="pb-0 mb-0 lh-125 abstract-links pubmeta"> 
+                <a target="_blank" href="https://subjective-camera.github.io/">project page</a> |   
+                <a target="_blank" href="https://arxiv.org/abs/2506.23711v3">paper</a>
+                </p>
+
+        </div>
+    </div> 
+
+    <div class="row  position-relative border-gray border-top border-gray ">
+        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+                <img src="./assets/pub/2025/kao/kao.png" class="lazy w-100 rounded-lg">
+        </div>
+        <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0">
+            <h5 class="mt-0 mb-1 ">KaoLRM: Repurposing Pre-trained Large Reconstruction Models for Parametric 3D Face Reconstruction
+        </h5>
+            <p class="mt-0 mb-0 pubinfo">
+                <a class="comma author" target="_blank" href="">Qingtian Zhu</a>
+                <a class="comma author" target="_blank" href="">Xu Cao</a>
+                <span class="comma author"><strong>Zhixiang Wang</strong></span>
+                <a class="comma author" target="_blank" href="">Yinqiang Zheng</a>
+                <a class="comma author" target="_blank" href="">Takafumi Taketomi</a>
+                <p class="mt-0 mb-0 pubinfo"><i><span class="venue">3DV</span></i> 2025</p>
+
+        
+                <p class="pb-0 mb-0 lh-125 abstract-links pubmeta"> 
+                <a target="_blank" href="">project page</a> |   
+                <a target="_blank" href="">paper</a>
+                </p>
+
+        </div>
+    </div>  
+
+    <div class="row  position-relative  border-top border-gray  ">
+        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+                <video class="lazy w-100 rounded-lg" muted autoplay loop>
+                  <source src="assets/pub/2025/sekai/sekai_video.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+        <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0">
+            <!-- "#F1C40F" -->
+            <h5 class="mt-0 mb-1 ">Sekai: A Video Dataset towards World Exploration</h5>
+            <p class="mt-0 mb-0 pubinfo">
+            <a class="comma author" target="_blank" href="">Zhen Li</a>
+            <a class="comma author" target="_blank" href="">Chuanhao Li</a>
+            <a class="comma author" target="_blank" href="">Xiaofeng Mao</a>
+            <a class="comma author" target="_blank" href="">Shaoheng Lin</a>
+            <a class="comma author" target="_blank" href="">Ming Li</a>
+            <a class="comma author" target="_blank" href="">Shitian Zhao</a>
+            <a class="comma author" target="_blank" href="">Zhaopan Xu</a>
+            <a class="comma author" target="_blank" href="">Xinyue Li</a>
+            <a class="comma author" target="_blank" href="">Yukang Feng</a>
+            <a class="comma author" target="_blank" href="">Jianwen Sun</a>
+            <a class="comma author" target="_blank" href="">Zizhen Li</a>
+            <a class="comma author" target="_blank" href="">Fanrui Zhang</a>
+            <a class="comma author" target="_blank" href="">Jiaxin Ai</a>
+            <span class="comma author"><strong>Zhixiang Wang</strong></span>
+            <a class="comma author" target="_blank" href="">Yuwei Wu</a>
+            <a class="comma author" target="_blank" href="">Tong He</a>
+            <a class="comma author" target="_blank" href="">Jiangmiao Pang</a>
+            <a class="comma author" target="_blank" href="">Yu Qiao</a>
+            <a class="comma author" target="_blank" href="">Yunde Jia</a>
+            <a class="comma author" target="_blank" href="">Kaipeng Zhang</a>
+        </p>
+        <p class="mt-0 mb-0 pubinfo"><i><span class="venue">NeurIPS</span>
+        </i> 2025</p>
+            
+            <p class="pb-0 mb-0 lh-125 abstract-links pubmeta">
+                <a target="_blank" href="https://lixsp11.github.io/sekai-project/">project page</a>
+              |
+              <a target="_blank" href="https://arxiv.org/abs/2506.15675">paper</a>
+              |
+              <a target="_blank" href="https://huggingface.co/datasets/Lixsp11/Sekai-Project">data</a>
+              |
+              <a target="_blank" href="https://github.com/Lixsp11/sekai-codebase">code</a>
+                <!-- <a target="_blank" href="">data</a> | -->
+                <!-- <a target="_blank" href="">bibtex</a>  -->
+            </p>
+            <!-- <p class="pb-0 mb-0 lh-125 abstract-links text-muted small">
+                <span class="apptag"><span class="text-bold" style="color: #29c00b;"> >>> Broader Impact</span> | Scientific Imaging <a class="apptag-link" href="https://arxiv.org/pdf/2504.07549"><i class="fa-solid fa-book"></i></a></span>
+            </p> -->
+        </div>
+    </div>  
+
+
+    <div class="row  position-relative border-top border-gray ">
+        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+            <img src="./assets/pub/2025/foundation/foundation.png" class="lazy w-100 rounded-lg">
+        </div>
+        <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0">
+            <h5 class="mt-0 mb-1 ">Foundation Model Insights and a Multi-model Approach for Superior Fine-grained One-shot Subset Selection
+        </h5>
+            <p class="mt-0 mb-0 pubinfo">
+                <a class="comma author" target="_blank" href="https://zhijingwan.github.io/">Zhijing Wan</a>
+                <span class="comma author"><strong>Zhixiang Wang</strong></span>
+                <a class="comma author" target="_blank" href="https://wangzwhu.github.io/home/">Zheng Wang</a>
+                <a class="comma author" target="_blank" href="https://scholar.google.com/citations?user=DtuoAWIAAAAJ">Xin Xu</a>
+                <a class="comma author" target="_blank" href="http://www.satoh-lab.nii.ac.jp/index.html">Shin'ichi Satoh</a>
+                <p class="mt-0 mb-0 pubinfo"><i><span style="color: #2575fc;"><strong>Oral</strong></span> &middot; <span class="venue">ICML</span></i> 2025</p>
+                
+                 
+                <p class="pb-0 mb-0 lh-125 abstract-links pubmeta"> 
+                    <a target="_blank" href="./assets/pub/2025/foundation/ICML25_Zhijing_FMs_for_subset_selection.pdf">paper</a> | 
+                    <!-- <a target="_blank" href="">arxiv</a> |  -->
+                    <a target="_blank" href="https://github.com/ZhijingWan/RAM-APL">code</a> 
+                </p>
+
+        </div>
+    </div>  
+
+
+
+    <div class="row  position-relative border-top border-gray ">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
                 <video class="lazy w-100 rounded-lg" muted autoplay loop>
                   <source src="assets/pub/2024/restorer/Yeh2024DIR.mp4" type="video/mp4">
@@ -223,139 +375,7 @@
         </div>
     </div>  
 
-
-    <div class="row no-gutters position-relative  border-top border-gray ">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
-                <img src="./assets/pub/2025/subjective-cam/subjective-camera.jpg" class="lazy w-100 rounded-lg">
-        </div>
-        <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 ">Subjective Camera 1.0: Bridging Human Cognition and Visual
-                Reconstruction through Sequence-Aware Sketch-Guided Diffusion
-        </h5>
-            <p class="mt-0 mb-0 pubinfo">
-                <a class="comma author" target="_blank" href="">Haoyang Chen</a>
-                <a class="comma author" target="_blank" href="">Dongfang Sun</a>
-                <a class="comma author" target="_blank" href="https://miles629.github.io/">Caoyuan Ma</a>
-                <a class="comma author" target="_blank" href="">Shiqin Wang</a>
-                <a class="comma author" target="_blank" href="">Kewei Zhang</a>
-                <a class="comma author" target="_blank" href="https://wangzwhu.github.io/home/">Zheng Wang<sup>†</sup></a>
-                <span class="comma author"><strong>Zhixiang Wang<sup>†</sup></strong></span>
-                <p class="mt-0 mb-0 pubinfo"><i><span class="venue">ICCV</span></i> 2025</p>
-
-        
-                <p class="pb-0 mb-0 lh-125 abstract-links pubmeta"> 
-                <a target="_blank" href="https://subjective-camera.github.io/">project page</a> |   
-                <a target="_blank" href="https://arxiv.org/abs/2506.23711v3">paper</a>
-                </p>
-
-        </div>
-    </div> 
-
-    <div class="row no-gutters position-relative border-gray ">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
-                <img src="./assets/pub/2025/kao/kao.png" class="lazy w-100 rounded-lg">
-        </div>
-        <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 ">KaoLRM: Repurposing Pre-trained Large Reconstruction Models for Parametric 3D Face Reconstruction
-        </h5>
-            <p class="mt-0 mb-0 pubinfo">
-                <a class="comma author" target="_blank" href="">Qingtian Zhu</a>
-                <a class="comma author" target="_blank" href="">Xu Cao</a>
-                <span class="comma author"><strong>Zhixiang Wang</strong></span>
-                <a class="comma author" target="_blank" href="">Yinqiang Zheng</a>
-                <a class="comma author" target="_blank" href="">Takafumi Taketomi</a>
-                <p class="mt-0 mb-0 pubinfo"><i><span class="venue">3DV</span></i> 2025</p>
-
-        
-                <p class="pb-0 mb-0 lh-125 abstract-links pubmeta"> 
-                <a target="_blank" href="">project page</a> |   
-                <a target="_blank" href="">paper</a>
-                </p>
-
-        </div>
-    </div>  
-
-    <div class="row no-gutters position-relative   ">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
-                <video class="lazy w-100 rounded-lg" muted autoplay loop>
-                  <source src="assets/pub/2025/sekai/sekai_video.mov" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div>
-        <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0">
-            <!-- "#F1C40F" -->
-            <h5 class="mt-0 mb-1 ">Sekai: A Video Dataset towards World Exploration</h5>
-            <p class="mt-0 mb-0 pubinfo">
-            <a class="comma author" target="_blank" href="">Zhen Li</a>
-            <a class="comma author" target="_blank" href="">Chuanhao Li</a>
-            <a class="comma author" target="_blank" href="">Xiaofeng Mao</a>
-            <a class="comma author" target="_blank" href="">Shaoheng Lin</a>
-            <a class="comma author" target="_blank" href="">Ming Li</a>
-            <a class="comma author" target="_blank" href="">Shitian Zhao</a>
-            <a class="comma author" target="_blank" href="">Zhaopan Xu</a>
-            <a class="comma author" target="_blank" href="">Xinyue Li</a>
-            <a class="comma author" target="_blank" href="">Yukang Feng</a>
-            <a class="comma author" target="_blank" href="">Jianwen Sun</a>
-            <a class="comma author" target="_blank" href="">Zizhen Li</a>
-            <a class="comma author" target="_blank" href="">Fanrui Zhang</a>
-            <a class="comma author" target="_blank" href="">Jiaxin Ai</a>
-            <span class="comma author"><strong>Zhixiang Wang</strong></span>
-            <a class="comma author" target="_blank" href="">Yuwei Wu</a>
-            <a class="comma author" target="_blank" href="">Tong He</a>
-            <a class="comma author" target="_blank" href="">Jiangmiao Pang</a>
-            <a class="comma author" target="_blank" href="">Yu Qiao</a>
-            <a class="comma author" target="_blank" href="">Yunde Jia</a>
-            <a class="comma author" target="_blank" href="">Kaipeng Zhang</a>
-        </p>
-        <p class="mt-0 mb-0 pubinfo"><i><span class="venue">NeurIPS</span>
-        </i> 2025</p>
-            
-            <p class="pb-0 mb-0 lh-125 abstract-links pubmeta">
-                <a target="_blank" href="https://lixsp11.github.io/sekai-project/">project page</a>
-              |
-              <a target="_blank" href="https://arxiv.org/abs/2506.15675">paper</a>
-              |
-              <a target="_blank" href="https://huggingface.co/datasets/Lixsp11/Sekai-Project">data</a>
-              |
-              <a target="_blank" href="https://github.com/Lixsp11/sekai-codebase">code</a>
-                <!-- <a target="_blank" href="">data</a> | -->
-                <!-- <a target="_blank" href="">bibtex</a>  -->
-            </p>
-            <!-- <p class="pb-0 mb-0 lh-125 abstract-links text-muted small">
-                <span class="apptag"><span class="text-bold" style="color: #29c00b;"> >>> Broader Impact</span> | Scientific Imaging <a class="apptag-link" href="https://arxiv.org/pdf/2504.07549"><i class="fa-solid fa-book"></i></a></span>
-            </p> -->
-        </div>
-    </div>  
-
-
-    <div class="row no-gutters position-relative">
-        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
-            <img src="./assets/pub/2025/foundation/foundation.png" class="lazy w-100 rounded-lg">
-        </div>
-        <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0">
-            <h5 class="mt-0 mb-1 ">Foundation Model Insights and a Multi-model Approach for Superior Fine-grained One-shot Subset Selection
-        </h5>
-            <p class="mt-0 mb-0 pubinfo">
-                <a class="comma author" target="_blank" href="https://zhijingwan.github.io/">Zhijing Wan</a>
-                <span class="comma author"><strong>Zhixiang Wang</strong></span>
-                <a class="comma author" target="_blank" href="https://wangzwhu.github.io/home/">Zheng Wang</a>
-                <a class="comma author" target="_blank" href="https://scholar.google.com/citations?user=DtuoAWIAAAAJ">Xin Xu</a>
-                <a class="comma author" target="_blank" href="http://www.satoh-lab.nii.ac.jp/index.html">Shin'ichi Satoh</a>
-                <p class="mt-0 mb-0 pubinfo"><i><span style="color: #29c00b;"><strong>Oral</strong></span> &middot; <span class="venue">ICML</span></i> 2025</p>
-                
-                 
-                <p class="pb-0 mb-0 lh-125 abstract-links pubmeta"> 
-                    <a target="_blank" href="./assets/pub/2025/foundation/ICML25_Zhijing_FMs_for_subset_selection.pdf">paper</a> | 
-                    <!-- <a target="_blank" href="">arxiv</a> |  -->
-                    <a target="_blank" href="https://github.com/ZhijingWan/RAM-APL">code</a> 
-                </p>
-
-        </div>
-    </div>  
-
-
-
-
-    <div class="row no-gutters position-relative  ">
+    <div class="row  position-relative  border-top border-gray ">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
                 <img src="./assets/pub/2024/mat/mat_teaser.png" class="lazy w-100 rounded-lg">
                 <!-- <img src="./assets/pub/2024/human/movement2.gif" class=" w-100 rounded-lg"> -->
@@ -393,7 +413,7 @@
         </div>
     </div>  
 
-    <div class="row no-gutters position-relative ">
+    <div class="row  position-relative border-top border-gray ">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
                 <video class="lazy w-100 rounded-lg" muted autoplay loop>
                   <source src="assets/pub/2023/disco/Wang2023DCO.mp4" type="video/mp4">
@@ -449,7 +469,7 @@
     </div>  
 
     
-    <div class="row no-gutters position-relative ">
+    <div class="row  position-relative border-top border-gray ">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
             <img src="./assets/pub/2024/attack/attack.png" class="lazy w-100 rounded-lg">
         </div>
@@ -487,7 +507,7 @@
         </div>
     </div>  
 
-    <div class="row no-gutters position-relative ">
+    <div class="row  position-relative border-top border-gray ">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
                 <img src="./assets/pub/2024/human/motion.gif" class="lazy w-100 rounded-lg">
                 <!-- <img src="./assets/pub/2024/human/movement2.gif" class=" w-100 rounded-lg"> -->
@@ -516,7 +536,7 @@
     </div>  
 
 
-    <div class="row no-gutters position-relative">
+    <div class="row  position-relative border-top border-gray ">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
             <img src="./assets/pub/2024/coreset/CDS2.png" class="lazy w-100 rounded-lg">
         </div>
@@ -544,7 +564,7 @@
         </div>
     </div>  
 
-    <div class="row no-gutters position-relative">
+    <div class="row  position-relative border-top border-gray ">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
                 <img src="./assets/pub/2023/sketch/sketch_reid.png" class="lazy w-100 rounded-lg">
         </div>
@@ -570,7 +590,7 @@
         </div>
     </div> 
 
-<div class="row no-gutters position-relative ">
+<div class="row  position-relative border-top border-gray ">
     <!-- <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
         <img src="assets/pub/2023/attack/thumbil.gif" class="lazy w-100 rounded-lg">
     </div> -->
@@ -611,7 +631,7 @@
         <a class="comma author" target="_blank" href="http://www.satoh-lab.nii.ac.jp/index.html">Shin'ichi Satoh</a>
         <a class="comma author" target="_blank" href="https://wangzwhu.github.io/home/">Zheng Wang</a>
 </p>
-        <p class="mt-0 mb-0 pubinfo"><i><span style="color: #29c00b;"><strong>Oral</strong></span> &middot; <span class="venue">AAAI</span>
+        <p class="mt-0 mb-0 pubinfo"><i><span style="color: #2575fc;"><strong>Oral</strong></span> &middot; <span class="venue">AAAI</span>
 </i> 2023 
 <!--             <span class="badge badge-pill badge-custom badge-success">Rating: SA, WA, WA, BA</span> -->
         </p> 
@@ -637,7 +657,7 @@
     </div>
 </div>  
 
-<div class="row no-gutters position-relative ">
+<div class="row  position-relative border-top border-gray ">
     <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
         <img src="./assets/pub/2023/interp/interp2.png" class="lazy w-100 rounded-lg">
     </div>
@@ -663,7 +683,7 @@
     </div>
 </div>  
 
-<div class="row no-gutters position-relative">
+<div class="row  position-relative border-top border-gray ">
     <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
         <img src="./assets/pub/2023/single/single.png" class="lazy w-100 rounded-lg">
     </div>
@@ -694,7 +714,7 @@
 
 
 
-<div class="row no-gutters position-relative ">
+<div class="row  position-relative border-top border-gray ">
     <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
         <img src="assets/pub/2022/rsgr/thumbnail.png" class="lazy w-100 rounded-lg">
     </div>
@@ -735,7 +755,7 @@
     </div>
 </div>  
        
-<div class="row no-gutters position-relative ">
+<div class="row  position-relative border-top border-gray ">
     <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
         <img src="assets/pub/2022/cdm/thumbnail.png" class="lazy w-100 rounded-lg">
     </div>
@@ -751,7 +771,7 @@
         <a class="comma author" target="_blank" href="https://vas.mpi-inf.mpg.de/dengxin/">Dengxin Dai</a>
         <a class="comma author" target="_blank" href="https://www.ee.nthu.edu.tw/cwlin/">Chia-Wen Lin</a>
 </p>
-        <p class="mt-0 mb-0 pubinfo"><i><span style="color: #29c00b;"><strong>Oral</strong></span> &middot; <span class="venue">CVPR</span>
+        <p class="mt-0 mb-0 pubinfo"><i><span style="color: #2575fc;"><strong>Oral</strong></span> &middot; <span class="venue">CVPR</span>
 </i> 2022
 <!--             <span class="badge badge-pill badge-custom badge-success">Rating: SA, WA, WA</span> -->
         </p>
@@ -777,7 +797,7 @@
 </div>  
     
         
-<div class="row no-gutters position-relative ">
+<div class="row  position-relative border-top border-gray ">
     <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
         <img src="assets/pub/2020/dsm/thumbnail.png" class="lazy w-100 rounded-lg">
     </div>
@@ -821,7 +841,7 @@
 </div>
     
         
-<div class="row no-gutters position-relative">
+<div class="row  position-relative border-top border-gray ">
     <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
         <img src="assets/pub/2019/lrd/thumbnail.png" class="lazy w-100 rounded-lg">
     </div>
@@ -855,7 +875,7 @@
 </div>
     
         
-<div class="row no-gutters position-relative  ">
+<div class="row  position-relative border-top border-gray  ">
     <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
         <img src="assets/pub/2019/pcc/thumbnail.png" class="lazy w-100 rounded-lg ">
     </div>
@@ -897,15 +917,15 @@
 </div>
 
 
-<div class="my-3 p-0 bg-white shadow-sm rounded-lg">
-    <h5 class="border-bottom border-gray p-3 mb-0">
+<div class="my-3 p-3">
+    <h3 class="section-title" id="misc">
         Misc
-   </h5>
+   </h3>
    <div class="col-md-9 col-xl-10 position-static p-3 pl-md-0 miscbody">
     <ul style="list-style-type: none;">
         <li>
-            <span class="misctag">Area Chair</span> NeurIPS (Award <a href="https://neurips.cc/Conferences/2025/ProgramCommittee#top-ac"><i class="fa-solid fa-award" style="color:burlywood;"></i></a>), ICLR, CVPR &nbsp;&nbsp;&nbsp;
-            <span class="misctag">Guest Editor</span> IJCV Special Issue on Audio-Visual Generation 2025
+            <span class="misctag">Area Chair</span> NeurIPS'25 (Award <a href="https://neurips.cc/Conferences/2025/ProgramCommittee#top-ac"><i class="fa-solid fa-award" style="color:burlywood;"></i></a>), ICLR'26, CVPR'26 &nbsp;&nbsp;&nbsp;
+            <span class="misctag">Guest Editor</span> <a href="https://avgen123.github.io/">IJCV Special Issue on Audio-Visual Generation</a> 2025
         </li>
         <li>
             <span class="misctag">Reviewer</span> TPAMI, IJCV, SIGGRAPH, CVPR, ICCV (Award <a href="https://iccv.thecvf.com/Conferences/2025/ProgramCommittee"><i class="fa-solid fa-award" style="color:burlywood;"></i></a>), ECCV, NeurIPS, ICLR, ICML, AAAI, IJCAI, ICMR (Award <i class="fa-solid fa-award" style="color:burlywood;"></i>)
@@ -983,7 +1003,9 @@
 
 
 
+
 <footer class="footer">
+    <hr>
     <div class="container">
         <div class="row my-3">
             <div class="col-6">
