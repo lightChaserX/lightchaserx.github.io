@@ -125,6 +125,7 @@ video.lazy {
 
 .venue {
   /* color:#2575fc; */
+  font-style: italic;
   color:#000101;
   font-weight: bold;
 }
