@@ -26,7 +26,7 @@ body {
     line-height: 1.45;           /* Messina reads nicely a touch looser */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding-top: 5.0rem;
+    padding-top: 3.5rem;
 }
 
 
@@ -35,23 +35,25 @@ body {
     opacity: 0.95;
 }
 
+/* override Bootstrap text-muted to cool gray */
+.text-muted {
+    color: #6b7280 !important;
+}
+
 /* set the font size for author and vanue */
 .pubinfo {
     font-size: 0.9rem;
-    /* color:#2575fc; */
-    color:slategrey;
-    /* color:#747071; */
+    color: #6b7280;
 }
 
 .author {
     font-size: 0.95rem;
-    color:rgb(125, 125, 125);
+    color: #6b7280;
 }
 
 .pubmeta {
     font-size: 0.95rem;
-    color:#aaa;
-    /* color:#2575fc; */
+    color: #9ca3af;
 }
 
 .inline-badge {
@@ -160,15 +162,12 @@ video.lazy {
 }
 
 .text-note {
-  color: #646e7fbe;
+  color: #9ca3af;
 }
 
 a {
     text-decoration: none;
-    /* color: #ea8a73; */
-    /* color: #d07616; */
     color: #d07616;
-    /* color:  #d43f6c; */
 }
 
 a:hover {
@@ -196,7 +195,7 @@ a.gradient-link:hover {
 
 a.icon-link {
     text-decoration: none;
-    color: #747071;
+    color: #6b7280;
 }
 
 
@@ -253,27 +252,18 @@ a.icon-link {
   
 
 
-.blackiconcolor {color:#aaa;}
+.blackiconcolor {color: #9ca3af;}
 .rediconcolor {color:#B55370;}
 
 .misctag {
     font-size: 0.92rem;
-    /* color:#aaa; */
-    color:slategrey;
-    font-weight: 600; 
-    /* display: inline-block;
-    padding: 0.05em 0.3em; 
-    color: white;
-    background-color:darkcyan; 
-    border-radius: 9px; 
-    text-align: center;
-    vertical-align: middle;
-    opacity: 0.5; */
+    color: #4b5563;
+    font-weight: 600;
 }
 
 .miscbody {
     font-size: 0.9rem;
-    color:slategrey;
+    color: #6b7280;
 }
 
 .text-bold {
@@ -282,20 +272,20 @@ a.icon-link {
 
 .apptag {
     /* font-size: 0.85rem; */
-    color:#111111;
+    color: #6b7280;
     display: inline-block;
-    padding: 0.2em 0.9em; /* Adjust padding for size */
+    padding: 0.2em 0.7em;
     /* font-weight: 600; */
-    background-color:#81868456; /* Background color */
-    border-radius: 9px; /* Rounded corners */
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     text-align: center;
     vertical-align: middle;
-    opacity: 0.8;
 }
 
 .apptag .apptag-link {
-    color: #FFF; /* Text color */
-    text-decoration: none; /* Remove underline */
+    color: #9ca3af;
+    text-decoration: none;
 }
 
 
@@ -305,7 +295,7 @@ a.icon-link {
     display: inline-block;
     font-size: 0.9em; /* Adjust size of the arrow */
     letter-spacing: 0.3em; /* Add spacing to make the arrow look longer */
-    color: #555; /* Set arrow color */
+    color: #6b7280;
     vertical-align: middle; /* Align with text */
 }
 
@@ -313,7 +303,7 @@ a.icon-link {
     display: inline-block;
     width: 5.5em;           /* 固定宽度可微调 */
     font-weight: 500;
-    color: #555;
+    color: #4b5563;
     text-align: left;      
     /* margin-right: .6em; */
     font-variant-numeric: tabular-nums;  /* 等宽数字 */
