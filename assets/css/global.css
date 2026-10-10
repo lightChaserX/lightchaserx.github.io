@@ -400,9 +400,6 @@ a[data-youtube]:hover .fa-youtube {
 }
 
 .research-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
     background-color: #f8f9fa;
     padding-top: 0.5rem;
 }
@@ -581,3 +578,7 @@ p.pubinfo + p.pubinfo {
     margin-right: 0.75rem;
 }
 
+/* name heading */
+.col > h1.h2 {
+    font-weight: 600;
+}
