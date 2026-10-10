@@ -586,10 +586,3 @@ p.pubinfo + p.pubinfo {
 .col > h1.h2 {
     font-weight: 600;
 }
-
-.pub-legend {
-    float: right;
-    margin-top: 0.9rem;
-    font-size: 0.8rem;
-    color: var(--color-muted);
-}
