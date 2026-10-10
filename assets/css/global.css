@@ -594,3 +594,10 @@ p.pubinfo + p.pubinfo {
   margin-left: 0.3em;
   font-variant-numeric: tabular-nums;
 }
+
+/* phone: the portrait stacks under the contact buttons */
+@media (max-width: 767.98px) {
+  .col-md-auto > .figure {
+    margin-top: 1.5rem;
+  }
+}
