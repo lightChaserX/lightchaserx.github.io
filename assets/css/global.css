@@ -1,10 +1,28 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: "MessinaSans";
+    src: url("../font/MessinaSansWeb-Regular.woff2") format("woff2"),
+         url("../font/MessinaSansWeb-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MessinaSans";
+    src: url("../font/MessinaSansWeb-SemiBold.woff2") format("woff2"),
+         url("../font/MessinaSansWeb-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
   
 
 /* after */
 body {
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI",
+    font-family: "MessinaSans", system-ui, -apple-system, "Segoe UI",
                  Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     font-size: 0.95rem;
     line-height: 1.45;           /* Messina reads nicely a touch looser */
@@ -193,7 +211,7 @@ a.icon-link {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-family: "MessinaSans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     font-weight: 500;
     font-size: 0.95rem;
     color: #111;
@@ -322,7 +340,7 @@ a.icon-link {
   
   /* Navigation links */
   .light-links a {
-    /* font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; */
+    /* font-family: "MessinaSans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; */
     font-size: 0.95rem;
     color: hsl(211, 25%, 25%);
     text-decoration: none;
@@ -399,9 +417,9 @@ a[data-youtube]:hover .fa-youtube {
    ------------------------------------------------------------------ */
 :root {
     --color-bg: #ffffff;
-    --color-text: #111111;
-    --color-muted: #6a7282;
-    --color-link: #111111;
+    --color-text: hsl(211, 25%, 10%);
+    --color-muted: hsl(211, 10%, 40%);
+    --color-link: hsl(211, 25%, 10%);
     --color-underline: rgba(0, 0, 0, 0.25);
     --color-highlight: #c0392b;
 }
@@ -511,3 +529,55 @@ a[data-youtube],
 .author {
     font-size: 0.85rem;
 }
+
+
+/* ------------------------------------------------------------------
+   Type scale (after vincentsitzmann.com): titles barely larger than
+   authors; hierarchy comes from weight and color, not size
+   ------------------------------------------------------------------ */
+body {
+    font-size: 16px;
+    line-height: 1.375;
+}
+
+/* bio keeps its original size */
+.col > p.text-muted {
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.pub-list h5,
+#product h5,
+.col-md-6 > h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 0.35rem !important;
+}
+
+.pubinfo,
+.author {
+    font-size: 0.9rem;
+}
+
+/* venue line: dark, not gray */
+p.pubinfo + p.pubinfo,
+p.pubinfo + p.pubinfo .venue {
+    color: var(--color-text) !important;
+}
+
+p.pubinfo + p.pubinfo {
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.pubmeta a {
+    font-size: 0.875rem;
+    margin-right: 0.75rem;
+}
+
