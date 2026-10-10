@@ -384,6 +384,10 @@ a[data-youtube]:hover .fa-youtube {
     display: none !important;
 }
 
+.pub-earlier .row:not(.pub-old) {
+    display: none !important;
+}
+
 .pub-filter {
     margin-left: 1rem;
     font-size: 0.95rem;

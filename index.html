@@ -184,7 +184,7 @@
     </h3>
         <span class="pub-filter">
             <a href="#" data-filter="recent" class="active">Recent</a> /
-            <a href="#" data-filter="all">All</a>
+            <a href="#" data-filter="earlier">Earlier</a>
         </span>
     </div>
         <!-- <i class="fas fa-book blackiconcolor"></i> -->
@@ -1562,15 +1562,15 @@
 </script>
 
 <script>
-  // Research list: switch between recent and all publications
+  // Research list: switch between recent and earlier publications
   $(document).on('click', '.pub-filter a', function (e) {
     e.preventDefault();
-    var all = $(this).data('filter') === 'all';
-    $('.pub-list').toggleClass('pub-recent', !all);
+    var earlier = $(this).data('filter') === 'earlier';
+    $('.pub-list').toggleClass('pub-recent', !earlier).toggleClass('pub-earlier', earlier);
     $('.pub-filter a').removeClass('active');
     $(this).addClass('active');
     var top = $('.pub-list').offset().top;
-    if (!all && $(window).scrollTop() > top) {
+    if ($(window).scrollTop() > top) {
       $(window).scrollTop(top);
     }
   });
