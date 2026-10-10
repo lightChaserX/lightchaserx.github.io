@@ -235,7 +235,6 @@
                 <a target="_blank" href="https://alaya-lab.github.io/pwm/">project page</a>
                 <a target="_blank" href="https://arxiv.org/abs/2609.10540">paper</a>
                 <a target="_blank" href="https://github.com/AlayaLab/pwm">code</a>
-                <a target="_blank" href="https://huggingface.co/papers/2609.10540">HF daily paper</a>
                 </p>
 
         </div>
@@ -292,7 +291,6 @@
                 <a target="_blank" href="https://arxiv.org/abs/2607.06291">intro report</a>
                 <a target="_blank" href="https://github.com/AlayaLab/AlayaWorld">code</a>
                 <a target="_blank" href="https://huggingface.co/AlayaLab/AlayaWorld">model</a>
-                <a target="_blank" href="https://huggingface.co/papers/2607.18367">HF daily paper</a>
                 <a target="_blank" href="https://youtu.be/n0jIEg7taTI">video</a>
                 </p>
 
@@ -323,7 +321,6 @@
                 <a target="_blank" href="https://arxiv.org/abs/2607.18703">paper</a>
                 <a target="_blank" href="https://github.com/AlayaLab/AlayaRenderer-Flash">code</a>
                 <a target="_blank" href="https://alaya-renderer-flash.alayalab.ai/play">playable demo</a>
-                <a target="_blank" href="https://huggingface.co/papers/2607.18703">HF daily paper</a>
                 </p>
 
         </div>
@@ -354,9 +351,8 @@
                 <p class="pb-0 mb-0 lh-125 abstract-links pubmeta">
                 <a target="_blank" href="https://alaya-studio.github.io/renderer/">project page</a>
                 <a target="_blank" href="https://arxiv.org/abs/2604.02329">paper</a>
-                <a target="_blank" href="https://github.com/ShandaAI/AlayaRenderer">code</a>
+                <a target="_blank" href="https://github.com/AlayaLab/AlayaRenderer">code</a>
                 <a target="_blank" href="https://huggingface.co/spaces/Brian9999/game-editing">demo</a>
-                <a target="_blank" href="https://huggingface.co/papers/2604.02329">HF daily paper</a>
                 <a target="_blank" href="https://youtu.be/N5CQ5WWIA_8">video</a>
                 </p>
 
@@ -388,7 +384,6 @@
                 <a target="_blank" href="https://arxiv.org/abs/2610.12461">paper</a>
                 <a target="_blank" href="https://github.com/youzhe0305/OuroWorld">code</a>
                 <a target="_blank" href="https://huggingface.co/datasets/YouZhe/OuroWorld-dataset">dataset</a>
-                <a target="_blank" href="https://huggingface.co/papers/2610.12461">HF daily paper</a>
                 <a target="_blank" href="https://youtu.be/QCJ4u7f3K-8">video</a>
                 </p>
 
@@ -525,7 +520,6 @@
                 <a target="_blank" href="https://arxiv.org/abs/2605.30346">paper</a>
                 <a target="_blank" href="https://github.com/youzhe0305/YoCausal">code</a>
                 <a target="_blank" href="https://huggingface.co/datasets/YouZhe/YoCausal-dataset">dataset</a>
-                <a target="_blank" href="https://huggingface.co/papers/2605.30346">HF daily paper</a>
                 <a target="_blank" href="https://youtu.be/dCaAfWTUCFA">video</a>
                 </p>
 
@@ -650,7 +644,6 @@
 
         
                 <p class="pb-0 mb-0 lh-125 abstract-links pubmeta"> 
-                <a target="_blank" href="https://subjective-camera.github.io/">project page</a>
                 <a target="_blank" href="https://arxiv.org/abs/2506.23711v3">paper</a>
                 </p>
 
@@ -674,8 +667,8 @@
 
         
                 <p class="pb-0 mb-0 lh-125 abstract-links pubmeta"> 
-                <a target="_blank" href="">project page</a>   
                 <a target="_blank" href="https://arxiv.org/abs/2601.12736">paper</a>
+                <a target="_blank" href="https://github.com/CyberAgentAILab/KaoLRM">code</a>
                 </p>
 
         </div>
@@ -1591,6 +1584,27 @@
   gtag('js', new Date());
 
   gtag('config', 'G-7GXC55XZEQ');
+</script>
+
+<script>
+  // GitHub stars next to "code" links of recent papers (cached for 6h to stay under the API limit)
+  $(function () {
+    var KEY = 'gh-stars-v1', TTL = 6 * 3600 * 1000, cache = {};
+    try { cache = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
+    function fmt(n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : n; }
+    $('.pub-list .row:not(.pub-old) .pubmeta a').each(function () {
+      var a = $(this), m = (a.attr('href') || '').match(/^https:\/\/github\.com\/([^\/]+\/[^\/#?]+)\/?$/);
+      if (!m || $.trim(a.text()) !== 'code') return;
+      var repo = m[1], hit = cache[repo];
+      function show(n) { if (n) a.append('<span class="gh-stars">&#9733;&nbsp;' + fmt(n) + '</span>'); }
+      if (hit && Date.now() - hit.t < TTL) return show(hit.n);
+      $.getJSON('https://api.github.com/repos/' + repo).done(function (d) {
+        cache[repo] = { n: d.stargazers_count, t: Date.now() };
+        try { localStorage.setItem(KEY, JSON.stringify(cache)); } catch (e) {}
+        show(d.stargazers_count);
+      }).fail(function () { if (hit) show(hit.n); });
+    });
+  });
 </script>
 
 

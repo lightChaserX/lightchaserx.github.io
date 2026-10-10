@@ -586,3 +586,11 @@ p.pubinfo + p.pubinfo {
 .col > h1.h2 {
     font-weight: 600;
 }
+
+.gh-stars {
+  color: var(--color-muted);
+  font-size: 0.8em;
+  display: inline-block; /* keeps the link underline off the count */
+  margin-left: 0.3em;
+  font-variant-numeric: tabular-nums;
+}
