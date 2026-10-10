@@ -1,26 +1,10 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: "MessinaSans";
-    src: url("/assets/fonts/MessinaSansWeb-Regular.woff2") format("woff2"),
-         url("/assets/fonts/MessinaSansWeb-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
   
-  @font-face {
-    font-family: "MessinaSans";
-    src: url("/assets/fonts/MessinaSansWeb-SemiBold.woff2") format("woff2"),
-         url("/assets/fonts/MessinaSansWeb-SemiBold.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
 
 /* after */
 body {
-    font-family: "MessinaSans", system-ui, -apple-system, "Segoe UI",
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI",
                  Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     font-size: 0.95rem;
     line-height: 1.45;           /* Messina reads nicely a touch looser */
@@ -209,7 +193,7 @@ a.icon-link {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    font-family: "MessinaSans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     font-weight: 500;
     font-size: 0.95rem;
     color: #111;
@@ -338,7 +322,7 @@ a.icon-link {
   
   /* Navigation links */
   .light-links a {
-    /* font-family: "MessinaSans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; */
+    /* font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; */
     font-size: 0.95rem;
     color: hsl(211, 25%, 25%);
     text-decoration: none;
@@ -361,3 +345,169 @@ a.icon-link {
     }
   }
   
+/* White play triangle inside YouTube thumbnail icons */
+a[data-youtube] .fa-youtube {
+    background: linear-gradient(#fff, #fff) center / 40% 45% no-repeat;
+    text-shadow: none !important;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+    color: #212121 !important;
+    opacity: 0.8;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a[data-youtube]:hover .fa-youtube {
+    color: #ff0000 !important;
+    opacity: 1;
+}
+
+
+/* Research list: Recent / All switch */
+.pub-recent .pub-old {
+    display: none !important;
+}
+
+.pub-filter {
+    margin-left: 1rem;
+    font-size: 0.95rem;
+    color: #9ca3af;
+}
+
+.pub-filter a {
+    color: #9ca3af;
+}
+
+.pub-filter a.active {
+    color: #d07616;
+    font-weight: 600;
+}
+
+.research-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #f8f9fa;
+    padding-top: 0.5rem;
+}
+
+.research-header .section-title {
+    margin-bottom: 0.4rem;
+}
+
+
+/* ------------------------------------------------------------------
+   Color scheme: black and white, black underlined links, red highlight
+   ------------------------------------------------------------------ */
+:root {
+    --color-bg: #ffffff;
+    --color-text: #111111;
+    --color-muted: #6a7282;
+    --color-link: #111111;
+    --color-underline: rgba(0, 0, 0, 0.25);
+    --color-highlight: #c0392b;
+}
+
+body,
+body.bg-light,
+.light-navbar,
+.research-header {
+    background-color: var(--color-bg) !important;
+}
+
+body,
+h1, h2, h3, h4, h5,
+.venue,
+.author strong,
+.contact-btn,
+.light-links a {
+    color: var(--color-text);
+}
+
+.section-title {
+    border-bottom-color: var(--color-text);
+}
+
+/* bio paragraphs read as body text, not muted */
+.col > p.text-muted {
+    color: var(--color-text) !important;
+}
+
+.text-muted,
+.pubinfo,
+.author,
+.pubmeta,
+.miscbody {
+    color: var(--color-muted) !important;
+}
+
+a,
+a:hover {
+    color: var(--color-link);
+    text-decoration: underline;
+    text-decoration-color: var(--color-underline);
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    text-decoration-color: var(--color-link);
+}
+
+a.gradient-link,
+a.gradient-link:hover {
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: var(--color-link);
+    display: inline;
+    text-decoration: underline;
+    text-decoration-color: var(--color-underline);
+}
+
+/* links that should stay plain */
+.light-links a,
+.contact-btn,
+a.comma.author,
+a.apptag-link,
+a[data-youtube],
+.pub-filter a,
+.col-md-6 > a {
+    text-decoration: none !important;
+}
+
+.contact-btn:hover,
+.light-links a:hover {
+    color: var(--color-text);
+    border-color: var(--color-text);
+}
+
+.pub-filter a {
+    color: var(--color-muted);
+}
+
+.pub-filter a.active {
+    color: var(--color-text);
+}
+
+/* Oral / Spotlight highlights */
+.pubinfo span[style*="2575fc"] {
+    color: var(--color-highlight) !important;
+}
+
+.border-gray {
+    border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* paper links: spaced words, no separators */
+.pubmeta a {
+    margin-right: 0.6rem;
+}
+
+/* no divider lines between papers */
+.pub-list .row.border-top {
+    border-top: 0 !important;
+}
+
+/* smaller author lists and venue lines */
+.pubinfo,
+.author {
+    font-size: 0.85rem;
+}
