@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css">
-<link rel="stylesheet" href="assets/css/global.css">
+<link rel="stylesheet" href="assets/css/global.css?v=20261010">
 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
@@ -1587,22 +1587,16 @@
 </script>
 
 <script>
-  // GitHub stars next to "code" links of recent papers (cached for 6h to stay under the API limit)
+  // GitHub stars next to "code" links of recent papers (counts refreshed daily by .github/workflows/stars.yml)
   $(function () {
-    var KEY = 'gh-stars-v1', TTL = 6 * 3600 * 1000, cache = {};
-    try { cache = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
     function fmt(n) { return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : n; }
-    $('.pub-list .row:not(.pub-old) .pubmeta a').each(function () {
-      var a = $(this), m = (a.attr('href') || '').match(/^https:\/\/github\.com\/([^\/]+\/[^\/#?]+)\/?$/);
-      if (!m || $.trim(a.text()) !== 'code') return;
-      var repo = m[1], hit = cache[repo];
-      function show(n) { if (n) a.append('<span class="gh-stars">&#9733;&nbsp;' + fmt(n) + '</span>'); }
-      if (hit && Date.now() - hit.t < TTL) return show(hit.n);
-      $.getJSON('https://api.github.com/repos/' + repo).done(function (d) {
-        cache[repo] = { n: d.stargazers_count, t: Date.now() };
-        try { localStorage.setItem(KEY, JSON.stringify(cache)); } catch (e) {}
-        show(d.stargazers_count);
-      }).fail(function () { if (hit) show(hit.n); });
+    $.getJSON('assets/data/stars.json?d=' + new Date().toISOString().slice(0, 10)).done(function (stars) {
+      $('.pub-list .row:not(.pub-old) .pubmeta a').each(function () {
+        var a = $(this), m = (a.attr('href') || '').match(/^https:\/\/github\.com\/([^\/]+\/[^\/#?]+)\/?$/);
+        if (m && $.trim(a.text()) === 'code' && stars[m[1]]) {
+          a.append('<span class="gh-stars">&#9733;&nbsp;' + fmt(stars[m[1]]) + '</span>');
+        }
+      });
     });
   });
 </script>
