@@ -601,3 +601,43 @@ p.pubinfo + p.pubinfo {
     margin-top: 1.5rem;
   }
 }
+
+/* ------------------------------------------------------------------
+   Dark theme: follows the system setting
+   ------------------------------------------------------------------ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-bg: #121417;
+    --color-text: hsl(211, 15%, 88%);
+    --color-muted: hsl(211, 8%, 62%);
+    --color-link: hsl(211, 15%, 88%);
+    --color-underline: rgba(255, 255, 255, 0.28);
+    --color-highlight: #e8705f;
+  }
+
+  .light-navbar {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+  }
+
+  .contact-btn {
+    color: var(--color-text);
+    border-color: rgba(255, 255, 255, 0.22);
+  }
+
+  .border-gray {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .misctag,
+  .news-date {
+    color: var(--color-text);
+  }
+
+  .apptag {
+    color: var(--color-muted);
+    background-color: #1c1f23;
+    border-color: #2c3036;
+  }
+}
