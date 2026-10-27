@@ -4,9 +4,9 @@
  "AlayaLab/AlayaWorld": 801,
  "AlayaLab/EditHero": 27,
  "AlayaLab/KaiNinja": 50,
- "AlayaLab/MeshAxiom": 33,
+ "AlayaLab/MeshAxiom": 34,
  "AlayaLab/PROWBench": 51,
- "AlayaLab/WorldSculpt": 351,
+ "AlayaLab/WorldSculpt": 355,
  "AlayaLab/pwm": 211,
  "Brian90709/diff-reflection-separation-code": 7,
  "CyberAgentAILab/KaoLRM": 38,
@@ -26,7 +26,7 @@
  "weihui1308/CAP": 13,
  "weihui1308/HOTCOLDBlock": 36,
  "weihui1308/Moire-Backdoor-Attack": 16,
- "yichuanH/InfiniDream": 41,
+ "yichuanH/InfiniDream": 42,
  "youzhe0305/OuroWorld": 46,
  "youzhe0305/YoCausal": 38
 }
