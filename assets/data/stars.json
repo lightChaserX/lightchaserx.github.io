@@ -1,13 +1,13 @@
 {
- "AlayaLab/AlayaRenderer": 650,
- "AlayaLab/AlayaRenderer-Flash": 58,
- "AlayaLab/AlayaWorld": 802,
+ "AlayaLab/AlayaRenderer": 651,
+ "AlayaLab/AlayaRenderer-Flash": 59,
+ "AlayaLab/AlayaWorld": 803,
  "AlayaLab/EditHero": 27,
- "AlayaLab/KaiNinja": 51,
+ "AlayaLab/KaiNinja": 52,
  "AlayaLab/MeshAxiom": 35,
  "AlayaLab/PROWBench": 51,
  "AlayaLab/WorldSculpt": 358,
- "AlayaLab/pwm": 211,
+ "AlayaLab/pwm": 210,
  "Brian90709/diff-reflection-separation-code": 7,
  "CyberAgentAILab/KaoLRM": 38,
  "HaoyChen/Implicit-Reasoning": 36,
@@ -26,7 +26,7 @@
  "weihui1308/CAP": 13,
  "weihui1308/HOTCOLDBlock": 36,
  "weihui1308/Moire-Backdoor-Attack": 16,
- "yichuanH/InfiniDream": 43,
+ "yichuanH/InfiniDream": 44,
  "youzhe0305/OuroWorld": 47,
  "youzhe0305/YoCausal": 38
 }
